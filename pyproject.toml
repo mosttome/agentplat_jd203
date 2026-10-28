@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mosttome-agentplat_jd203"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别Agent 编排平台工程师·灰度发布与版本回滚上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "mosttome" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://mosttome.github.io"
+Repository = "https://github.com/mosttome/agentplat_jd203"
+Issues = "https://github.com/mosttome/agentplat_jd203/issues"
+
+[project.scripts]
+agentplat_jd203 = "agentplat_jd203:main"
+
+[tool.setuptools]
+py-modules = ["agentplat_jd203"]
